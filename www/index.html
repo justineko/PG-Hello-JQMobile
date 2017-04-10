@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
     		<meta name="format-detection" content="telephone=no" />
@@ -12,11 +13,17 @@
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	</head>
+
+
+
 	<body onload="init()">
 	
-		<!--STRONA GLOWNA APLIKACJI-->
-	<div data-role="page" id="pageone">
+
+	<!--STRONA GLOWNA APLIKACJI-->
+	<div data-role="page" id="MainMenu">
 		
+
+		<!--HEADER-->
   			<div data-role="header">
     				<h6>Appin', plannin', workin'!</h6>
  			</div>
@@ -24,37 +31,37 @@
 		<!--Przycisk DODAJ PLAN DNIA-->
   			<div data-role="main" class="ui-content">
     				<h5>Witaj w aplikacji WorkHours</h5>
-   				<a href="#pagetwo" class="ui-btn">Dodaj nowy plan dnia</a>
+   				<a href="#DayPlan" class="ui-btn">Dodaj nowy plan dnia</a>
   			</div>
 
 		<!--Przycisk ZOBACZ STATUS NA MIESIĄC-->
   			<div data-role="main" class="ui-content">
     				<h5>Witaj w aplikacji WorkHours</h5>
-   				<a href="#pagetwo" class="ui-btn">Zobacz status miesięczny</a>
+   				<a href="#MonthStat" class="ui-btn">Zobacz status miesięczny</a>
   			</div>
 		
 		<!--Przycisk EKSPORT KALENDARZA-->
   			<div data-role="main" class="ui-content">
     				<h5>Witaj w aplikacji WorkHours</h5>
-   				<a href="#pagetwo" class="ui-btn">Eksport kalendarza</a>
+   				<a href="#CalExport" class="ui-btn">Eksport kalendarza</a>
   			</div>
 		
 		<!--Przycisk USTAWIENIA-->
   			<div data-role="main" class="ui-content">
     				<h5>Witaj w aplikacji WorkHours</h5>
-   				<a href="#pagetwo" class="ui-btn">Ustawienia</a>
+   				<a href="#Settings" class="ui-btn">Ustawienia</a>
   			</div>
 		
 		<!--Przycisk INSTRUKCJA APLIKACJI-->
   			<div data-role="main" class="ui-content">
     				<h5>Witaj w aplikacji WorkHours</h5>
-   				<a href="#pagetwo" class="ui-btn">Instrukcja</a>
+   				<a href="#AppManual" class="ui-btn">Instrukcja</a>
   			</div>
 		
 		<!--Przycisk INFORMACJE O AUTORACH-->
   			<div data-role="main" class="ui-content">
     				<h5>Witaj w aplikacji WorkHours</h5>
-   				<a href="#pagetwo" class="ui-btn">Info o autorach</a>
+   				<a href="#AuthorsInfo" class="ui-btn">Info o autorach</a>
   			</div>
 		
 		
@@ -64,18 +71,22 @@
     				<h6>Footer Text</h6>
   			</div>
 	</div> 
+	<!--KONIEC DIVA Z MENU GLOWNEGO-->
+		
 
+	<!--PODSTONA Z DODAWANIEM GODZIN NA DANY DZIEŃ-->
+	<div data-role="page" id="DayPlan">
 		
-	<div data-role="page" id="pagetwo">
-		
+
+		<!--HEADER-->
   			<div data-role="header">
     				<h6>Appin', plannin', workin'!</h6>
  			</div>
 
 		
   			<div data-role="main" class="ui-content">
-				 <p>This is Page Two. If you click on the link below, it will take you to Page One.</p>
-				 <a href="#pageone">Go to Page One</a>
+				 <p>Tu będzie możliwość dodania godzin pracy w danym dniu</p>
+				 <a href="#MainMenu">Cofnij</a>
  			</div>
 
 		
@@ -84,7 +95,137 @@
     				<h6>Footer Text</h6>
   			</div>
 	</div> 
+	<!--Koniec podstrony-->
 		
+
+	<!--PODSTONA Z STATUSEM MIESIĘCZNYM-->
+	<div data-role="page" id="MonthStat">
 		
+
+		<!--HEADER-->
+  			<div data-role="header">
+    				<h6>Appin', plannin', workin'!</h6>
+ 			</div>
+
+		
+  			<div data-role="main" class="ui-content">
+				 <p>Tu będzie wyświetlany status miesięczny</p>
+				 <h5>W tym miesiącu przepracowałeś: 78h</h5><br>
+				 <h5>Powinieneś wypracować: 150 h</h5><br>
+				 <h5>Do zrobienia zostaje: 72 h</h5><br>
+				 <h5>Powodzenia!</h5>
+				 <a href="#MainMenu">Cofnij</a>
+ 			</div>
+
+		
+		<!--FOOTER-->
+  			<div data-role="footer">
+    				<h6>Footer Text</h6>
+  			</div>
+	</div> 
+	<!--Koniec podstrony-->
+
+
+	<!--PODSTONA Z EKSPORTOWANIEM KALENDARZA-->
+	<div data-role="page" id="CalExport">
+		
+
+		<!--HEADER-->
+  			<div data-role="header">
+    				<h6>Appin', plannin', workin'!</h6>
+ 			</div>
+
+		
+  			<div data-role="main" class="ui-content">
+				 <p>Tu będzie możliwość eksportu kalendarza</p>
+				 <a href="#MainMenu">Cofnij</a>
+ 			</div>
+
+		
+		<!--FOOTER-->
+  			<div data-role="footer">
+    				<h6>Footer Text</h6>
+  			</div>
+	</div> 
+	<!--Koniec podstrony-->
+
+
+	<!--PODSTONA Z USTAWIENIAMI APLIKACJI-->
+	<div data-role="page" id="Settings">
+		
+
+		<!--HEADER-->
+  			<div data-role="header">
+    				<h6>Appin', plannin', workin'!</h6>
+ 			</div>
+
+		
+  			<div data-role="main" class="ui-content">
+				 <p>Tu będzie zmiana ustawień aplikacji</p>
+				 <a href="#MainMenu">Cofnij</a>
+ 			</div>
+
+		
+		<!--FOOTER-->
+  			<div data-role="footer">
+    				<h6>Footer Text</h6>
+  			</div>
+	</div> 
+	<!--Koniec podstrony-->
+
+
+	<!--PODSTONA Z INSTRUKCJA OBSLUGI APLIKACJI-->
+	<div data-role="page" id="AppManual">
+		
+
+		<!--HEADER-->
+  			<div data-role="header">
+    				<h6>Appin', plannin', workin'!</h6>
+ 			</div>
+
+		
+  			<div data-role="main" class="ui-content">
+				 <p>Tu będzie instrukcja obsługi aplikacji z opisem funkcjonalności</p>
+				 <a href="#MainMenu">Cofnij</a>
+ 			</div>
+
+		
+		<!--FOOTER-->
+  			<div data-role="footer">
+    				<h6>Footer Text</h6>
+  			</div>
+	</div> 
+	<!--Koniec podstrony-->
+
+	<!--PODSTONA Z INFORMACJAMI O AUTORACH-->
+	<div data-role="page" id="AuthorsInfo">
+		
+
+		<!--HEADER-->
+  			<div data-role="header">
+    				<h6>Appin', plannin', workin'!</h6>
+ 			</div>
+
+		
+  			<div data-role="main" class="ui-content">
+				 <p>Informacje o autorach:</p><br>
+				 <p>Filip Tańcula, nr albumu: 181929</p><br>
+				 <p>Justyna Konieczny, nr albumu: 180624</p><br>
+				 <p>Informatyka Stosowana, UEK, dzienne II st.</p><br>
+				 <p>Grupa dziekańska: KrDUIs1012</p><br>
+				 <h3>#Kochamy programować w #JavaScript</h3>
+				 <a href="#MainMenu">Cofnij</a>
+ 			</div>
+
+		
+		<!--FOOTER-->
+  			<div data-role="footer">
+    				<h6>Footer Text</h6>
+  			</div>
+	</div> 
+	<!--Koniec podstrony-->
+
+
+
 	</body>
 </html>
