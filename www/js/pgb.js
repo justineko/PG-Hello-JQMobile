@@ -19,8 +19,6 @@ function deviceInfo() {
 	document.getElementById("deviceDetails").innerHTML = info;	
 }
 
-$(function() {
-			    $('#datetimepicker3').datetimepicker({
-			      pickDate: true
-			    });
-			  });
+$(document).on("pagebeforeshow", "#page1", function(){
+    
+});

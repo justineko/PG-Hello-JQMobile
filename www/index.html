@@ -82,15 +82,19 @@
   			<div data-role="main" class="ui-content">
 				 <p>Tu będzie możliwość dodania godzin pracy w danym dniu</p>
 
-			<div class="well">
-			  <div id="datetimepicker3" class="input-append">
-			    <input data-format="hh:mm:ss" type="text"></input>
-			    <span class="add-on">
-			      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
-			      </i>
-			    </span>
-			  </div>
-			</div>
+	<div data-role="page" id="page1" data-theme="a">
+    <div id="header" data-role="header">
+         <h1>Dynamic Collapsible</h1>
+    </div>
+    <div data-role="content">
+        
+        <div class="ui-field-contain">
+        <label for="notifTime">Notification Time:</label>
+		<input name="notifTime" id="notifTime" type="text" data-role="datebox" data-options='{"mode":"timebox", "useNewStyle":true, "overrideTimeFormat": 12, "themeButton": "b", "themeInput": "a", "theme": "b", "themeHeader": "b"}' />
+        </div>
+    
+    </div>
+</div>
 		
 
 				 <!--<a href="#MainMenu" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
