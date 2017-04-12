@@ -1,4 +1,4 @@
-function init() {
+/*function init() {
 	document.addEventListener("deviceready",onDeviceReady, false);
 }
 
@@ -17,7 +17,7 @@ function deviceInfo() {
 			'Device Version : '  + device.version + '<br>';
 
 	document.getElementById("deviceDetails").innerHTML = info;	
-}
+}*/
 
 $(document).on("pagebeforeshow", "#page1", function(){
     
