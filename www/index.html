@@ -6,12 +6,12 @@
     		<meta name="format-detection" content="telephone=no" />
     		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     		<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-			<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-			<script src="www/js/pgb.js"></script>
-			<script src="cordova.js"></script>
-			<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-			<script src="js/jquery-2.1.4.min.js"></script>
-			<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	</head>
 
 
@@ -74,46 +74,26 @@
 
 		<!--HEADER-->
   			<div data-role="header" data-theme="a">
-				<a id="myButton1" href="#MainMenu" data-role="button"></a>
+				<a id="myButton1" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
 				
 				<!--<a id="InfoBtn" href="#InfoPop" data-rel="popup" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info"></a>-->
 				<h6>Dodaj godz pracy</h6>
 				<a href="#myPopup" data-rel="popup" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext"></a>
 				<div data-role="popup" id="myPopup" class="ui-content">
 				      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-				      <p>I have a close button at the top right corner.</p>
-				      <p><b>Tip:</b> You can also click outside to close me.</p>
+				      <p>W tym oknie możesz dodać nowy daylog.
+				       Dodaj początek oraz zakończenie dnia pracy. </p>
+				      <p><b>Tip:</b>Pamiętaj, że godzina początkowa nie może być późniejsza od godziny końcowej.</p>
 				</div>
 				
  			</div>
 
 		
   			<div data-role="main" class="ui-content">
-				 <p>Tu będzie możliwość dodania godzin pracy w danym dniu</p>
-<<<<<<< HEAD
-
-
-				 <!--<a href="#MainMenu" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
- 			</div>
-	
-	<div data-role="page" id="page1" data-theme="a">
-    <div id="header" data-role="header">
-         <h1>Dynamic Collapsible</h1>
-    </div>
-    <div data-role="content">
-        
-        <div class="ui-field-contain">
-        <label for="notifTime">Notification Time:</label>
-		<input name="notifTime" id="notifTime" type="text" data-role="datebox" data-options='{"mode":"timebox", "useNewStyle":true, "overrideTimeFormat": 12, "themeButton": "b", "themeInput": "a", "theme": "b", "themeHeader": "b"}' />
-        </div>
-    
-    </div>
-</div>
-=======
+				 <br><p>Tu będzie możliwość dodania godzin pracy w danym dniu</p>
 				 <!--<a href="#MainMenu" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
  			</div>
 
->>>>>>> origin/testBranch
 		
 		<!--FOOTER-->
   			<div data-role="footer">
@@ -122,10 +102,6 @@
 	</div> 
 	<!--Koniec podstrony-->
 		
-
-
-
-
 
 	<!--PODSTONA Z STATUSEM MIESIĘCZNYM-->
 	<div data-role="page" id="MonthStat">
