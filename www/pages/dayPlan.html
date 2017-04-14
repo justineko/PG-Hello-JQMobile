@@ -1,0 +1,35 @@
+<!--PODSTONA Z DODAWANIEM GODZIN NA DANY DZIEŃ-->
+<div data-role="page" id="DayPlan">
+
+
+    <!--HEADER-->
+    <div data-role="header" data-theme="a">
+        <a id="myButton1" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
+
+        <!--<a id="InfoBtn" href="#InfoPop" data-rel="popup" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info"></a>-->
+        <h6>Dodaj godz pracy</h6>
+        <a href="#myPopup" data-rel="popup" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext"></a>
+        <div data-role="popup" id="myPopup" class="ui-content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <p>
+                W tym oknie możesz dodać nowy daylog.
+                Dodaj początek oraz zakończenie dnia pracy.
+            </p>
+            <p><b>Tip:</b>Pamiętaj, że godzina początkowa nie może być późniejsza od godziny końcowej.</p>
+        </div>
+
+    </div>
+
+
+    <div data-role="main" class="ui-content">
+        <br><p>Tu będzie możliwość dodania godzin pracy w danym dniu</p>
+        <!--<a href="#MainMenu" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
+    </div>
+
+
+    <!--FOOTER-->
+    <div data-role="footer">
+        <h6>Footer Text</h6>
+    </div>
+</div>
+<!--Koniec podstrony-->
